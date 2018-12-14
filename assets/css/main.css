@@ -112,6 +112,11 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+/* Adding required asterisk to forms */
+.form-group.required .control-label:after {
+	content:"*";
+	color:red;
+  }
 
 /* Basic */
 
@@ -3485,7 +3490,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.2s ease;
 			transition: opacity 0.2s ease;
 			height: inherit;
-			left: 1.25em;
+			left: 1.1em;
 			line-height: inherit;
 			position: absolute;
 			top: 0;
@@ -3502,6 +3507,7 @@ input, select, textarea {
 
 					#header h1 a {
 						font-size: 0.8em;
+
 					}
 
 				}
@@ -3966,7 +3972,10 @@ input, select, textarea {
 						margin: 0;
 						padding: 0.5em 0;
 					}
-
+					#topSignUp{
+						display:none;
+						text-decoration: :none;						
+					}
 				}
 
 		@media screen and (max-width: 980px) {
@@ -3982,7 +3991,11 @@ input, select, textarea {
 			#footer {
 				padding: 3em 2em 1em 2em ;
 			}
-
+			#topSignUp{
+				height:3em;
+				vertical-align: auto;
+				text-decoration: :none;
+			}
 		}
 
 /* Landing */
