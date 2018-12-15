@@ -43,21 +43,27 @@
 						<section class="wrapper style5">
 							<div class="inner">
 
-							<img src="images/UPS_WEM-Shoot_76_Fullsize.jpg" class="image">
+							<img src="images/smartmockups_jpms2bn0.jpg"  width="20%" class="image left col-1">
 								
 									<h4>Please say hi!</h4>
 									<form method="post" action="https://formspree.io/storageondemand@ups.com" >
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall">
-												<input type="text" name="name" id="name" value="" placeholder="Name" required />*
+												<input type="text" name="name" id="name" value="" placeholder="Name" tabindex="1" required="required" />
 											</div>
 											<div class="col-6 col-12-xsmall">
-												<input type="email" name="email" id="email" value="" placeholder="Email" required />*
+												<input type="email" name="email" id="email" value="" placeholder="Email" required="required" />
 											</div>
-											
-									
+											<div class="col-6 col-12-xsmall">
+												<select name="_subject" id="category">
+													<option value="General">General Question</option>
+													<option value="Service">Service Question</option>
+													<option value="Pilot">Pilot</option>
+													
+												</select>
+											</div>
 											<div class="col-12">
-												<textarea name="message" id="message" placeholder="Questions?" rows="6"></textarea>
+												<textarea name="message" id="message" placeholder="Questions?" rows="4"></textarea>
 											</div>
 											<div class="col-12">
 												<ul class="actions">

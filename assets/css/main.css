@@ -329,6 +329,11 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+	.frontCard {
+		text-align: left;
+		vertical-align:top;
+		padding: 1 2em 1 2em;
+	}
 
 /* Row */
 
@@ -2584,11 +2589,11 @@ input, select, textarea {
 	}
 
 		.features li {
-			padding: 4em 4em 2em 6em ;
+			padding: 1em 2em 1em 2em ;
 			display: block;
 			position: relative;
 			text-align: left;
-			width: 50%;
+			
 		}
 
 			.features li:nth-child(1) {
