@@ -2584,12 +2584,12 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		list-style: none;
-		padding: 0;
+		padding: 1em;
 		width: 100%;
 	}
 
 		.features li {
-			padding: 1em 2em 1em 2em ;
+			padding: 2em 2em 3em 2em ;
 			display: block;
 			position: relative;
 			text-align: left;
@@ -2680,10 +2680,10 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				.features li {
-					padding: 3em 0 1em 0 ;
-					background-color: transparent !important;
+				
+				
 					border-top: solid 2px #fff;
-					width: 100%;
+			
 				}
 
 					.features li:first-child {
