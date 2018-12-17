@@ -49,13 +49,13 @@
 									<form method="post" action="https://formspree.io/storageondemand@ups.com" >
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall">
-												<input type="text" name="name" id="name" value="" placeholder="Name" tabindex="1" required="required" />
+												<input type="text" name="name" id="name" value="" placeholder="Name" tabindex="1" required="required" autofocus />
 											</div>
 											<div class="col-6 col-12-xsmall">
-												<input type="email" name="email" id="email" value="" placeholder="Email" required="required" />
+												<input type="email" name="email" id="email" value="" placeholder="Email" tabindex="2" required="required" />
 											</div>
 											<div class="col-6 col-12-xsmall">
-												<select name="_subject" id="category">
+												<select name="_subject" id="category" tabindex="3">
 													<option value="General">General Question</option>
 													<option value="Service">Service Question</option>
 													<option value="Pilot">Pilot</option>
@@ -63,15 +63,15 @@
 												</select>
 											</div>
 											<div class="col-12">
-												<textarea name="message" id="message" placeholder="Questions?" rows="4"></textarea>
+												<textarea name="message" id="message" placeholder="Questions?" rows="4" tabindex="4"></textarea>
 											</div>
 											<div class="col-12">
 												<ul class="actions">
-													<li><input type="submit" value="Send Message" class="primary" /></li>
+													<li><input type="submit" value="Send Message" class="primary" tabindex="5" /></li>
 
 												</ul>
 											</div>
-											<input type="hidden" name="_next" value="https://www.clickstorestuff.com/respond.html"/>
+											<input type="hidden" name="_next" value="http://www.clickstorestuff.com/respond.html"/>
 										</div>
 									</form>
 							
