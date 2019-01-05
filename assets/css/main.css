@@ -2524,6 +2524,7 @@ input, select, textarea {
 			background-color: #ed4933;
 			box-shadow: none !important;
 			color: #ffffff !important;
+
 		}
 
 			input[type="submit"].primary:hover,
@@ -2532,6 +2533,7 @@ input, select, textarea {
 			button.primary:hover,
 			.button.primary:hover {
 				background-color: #ef5e4a !important;
+				text-decoration-line: none;				
 			}
 
 			input[type="submit"].primary:active,

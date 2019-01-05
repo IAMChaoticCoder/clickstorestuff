@@ -7,7 +7,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		gtag('js', new Date());
 	</head>
 	<body class="is-preload">
 <!--Zips for ATL
@@ -52,24 +51,72 @@ Zips for KC
 						<section class="wrapper style5">
 							<div class="inner">
 									<h4>Sign Up to be a part of the Pilot</h4>
-									<form method="post" action="signup-form.html" >
-										<div  >Check if your zip code is in the pilot areas.</div>
-										<div class="row ">
+									<form method="post" action="https://formspree.io/storageondemand@ups.com" >
+										<div class="row gtr-uniform">
+											<div class="col-6 col-12-xsmall">
+												<input type="text" name="firstname" id="firstname" value="" placeholder="First Name" required/>
+											</div>
+											<div class="col-6 col-12-xsmall">
+													<input type="text" name="lastname" id="lastname" value="" placeholder="Last Name" required/>
+												</div>
+											<div class="col-6 col-12-xsmall">
+												<input type="email" name="email" id="email" value="" placeholder="Email" required/>
+											</div>
+
+										<!-- address-line1 input-->
+										<div class="control-group col-12 col-12-xsmall">
+												<label class=" control-label">Enter the address we will be picking up and shipping to.</label>
+												<div class="controls">
+													<input id="address-line1" name="address-line1" type="text" placeholder="Address  1"
+													class="input-xlarge">
+													
+												</div>
+											</div><br/><br/>
+											<!-- address-line2 input-->
+											<div class="control-group col-12 col-12">
+									
+												<div class="controls">
+													<input id="address-line2" name="address-line2" type="text" placeholder="Address  2"
+													class="input-xlarge">
+													<!--<p class="help-block">Apartment, suite , unit, building, floor, etc.</p>-->
+												</div>
+											</div>
+											<!-- city input-->
+											<div class="control-group">
+												
+												<div class="controls">
+													<input id="city" name="city" type="text" placeholder="City" class="input-xlarge">
+												
+												</div>
+											</div>
+											<!-- region input-->
+											<div class="control-group">
+											
+												<div class="controls">
+													<input id="region" name="region" type="text" placeholder="State"
+													class="input-xlarge">
+												
+												</div>
+											</div>
 											<!-- postal-code input-->
 											<div class="control-group">
 											
 												<div class="controls">
-													<input id="postal-code" name="postal-code" type="text" placeholder="Zip / Postal Code" autofocus class="input-large" required>
+													<input id="postal-code" name="postal-code" type="text" placeholder="Zip / Postal Code"
+													class="input-xlarge">
+													
 												</div>
 											</div>
-											
-											<div class="col-6">
-												<ul class="actions  ">
-													<li><input type="submit" value="Get started" class="primary align-right" /></li>
+											<div class="col-12">
+												<textarea name="message" id="message" placeholder="Any comments or questions, let us know!" rows="3"></textarea>
+											</div>
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" value="Sign Up" class="primary" /></li>
 
 												</ul>
 											</div>
-										
+											<input type="hidden" name="_next" value="http://www.clickstorestuff.com/thanks.html"/>
 										</div>
 									</form>
 							
