@@ -67,7 +67,7 @@ Zips for KC
 										<div class="control-group col-12 col-12-xsmall">
 												<label class=" control-label">Enter the address we will be picking up and shipping to.</label>
 												<div class="controls">
-													<input id="address-line1" name="address-line1" type="text" placeholder="Address  1"
+													<input id="address-line1" name="address-line1" type="text" placeholder="Address  1" required
 													class="input-xlarge">
 													
 												</div>
@@ -76,7 +76,7 @@ Zips for KC
 											<div class="control-group col-12 col-12">
 									
 												<div class="controls">
-													<input id="address-line2" name="address-line2" type="text" placeholder="Address  2"
+													<input id="address-line2" name="address-line2" type="text" placeholder="Address  2" 
 													class="input-xlarge">
 													<!--<p class="help-block">Apartment, suite , unit, building, floor, etc.</p>-->
 												</div>
@@ -85,7 +85,7 @@ Zips for KC
 											<div class="control-group">
 												
 												<div class="controls">
-													<input id="city" name="city" type="text" placeholder="City" class="input-xlarge">
+													<input id="city" name="city" type="text" placeholder="City" class="input-xlarge" required>
 												
 												</div>
 											</div>
@@ -93,7 +93,7 @@ Zips for KC
 											<div class="control-group">
 											
 												<div class="controls">
-													<input id="region" name="region" type="text" placeholder="State"
+													<input id="region" name="region" type="text" placeholder="State" required
 													class="input-xlarge">
 												
 												</div>
@@ -102,7 +102,7 @@ Zips for KC
 											<div class="control-group">
 											
 												<div class="controls">
-													<input id="postal-code" name="postal-code" type="text" placeholder="Zip / Postal Code"
+													<input id="postal-code" name="postal-code" type="text" placeholder="Zip / Postal Code" required
 													class="input-xlarge">
 													
 												</div>
@@ -110,9 +110,16 @@ Zips for KC
 											<div class="col-12">
 												<textarea name="message" id="message" placeholder="Any comments or questions, let us know!" rows="3"></textarea>
 											</div>
+											<div class="col-12 col-12-xsmall">
+													<input type="checkbox" name="chkTOS" id="chkTOS" style=";" onchange="document.getElementById('signup').disabled = !this.checked;" ><label for="chkTOS" >I confirm that I've been given enough time to read and understand our Terms of Service. <br/>Make a lawyer smile today.<br/>
+													<a href="tos.html" target="_blank">Read the Storage On Demand Terms of Service</a>. (This will open in a new window.)</label>
+													
+											</div>
+											
+
 											<div class="col-12">
 												<ul class="actions">
-													<li><input type="submit" value="Sign Up" class="primary" /></li>
+													<li><input type="submit" value="Sign Up" id="signup" class="primary" disabled /></li>
 
 												</ul>
 											</div>

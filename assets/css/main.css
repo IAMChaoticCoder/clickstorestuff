@@ -3552,6 +3552,7 @@ input, select, textarea {
 						#header nav > ul > li > a.menuToggle {
 							outline: 0;
 							position: relative;
+							text-decoration-line: none;
 						}
 
 							#header nav > ul > li > a.menuToggle:after {
@@ -3563,6 +3564,7 @@ input, select, textarea {
 								height: 3.75em;
 								vertical-align: top;
 								width: 2em;
+								text-decoration-line: none;
 							}
 
 							@media screen and (max-width: 736px) {
