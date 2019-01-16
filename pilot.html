@@ -1,6 +1,13 @@
 <!DOCTYPE HTML>
-<!--
-git clone https://iamchaoticcoder@bitbucket.org/iamchaoticcoder/storageondemand.com.git-->
+<!--Zips for ATL
+30328,30346,30356,30068,30342,30067,30338,30327,30339,30319,30350,30326,30077,30366,30062,
+30305,30069,30362,30360,30341,30080,30081,30076
+
+Zips for KC
+66210,66213,66212,66251,66215,66214,66211,66207,66209,66221,66223,66219,66204,66206,66224,
+66062,66203,66222,66216,66220,66063,66051,66285,66282,66283,66208,66225,66276,66202,66250,
+66201,66217,66205,66218,66085,66286,66227
+-->
 <html>
 	<head>
 		<title>Storage On Demand - a UPS company</title>
@@ -15,19 +22,41 @@ git clone https://iamchaoticcoder@bitbucket.org/iamchaoticcoder/storageondemand.
 		<link rel="stylesheet" href="assets/css/timeline.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		
+		<style>
+		#faq {
+			padding: 2em 0 4em 0 ;
+		}
+		
+		.full-img{
+			background-image: url("/images/istockphoto-892801064-2048x2048.jpg");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size:cover;
+		}
+		</style>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131788733-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-131788733-1');
+		</script>
 	</head>
-	<body class="landing is-preload">
+	<body class="pilotlandingland ">
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
 					<!-- Header -->
-					<header id="header">
-							<h1><a href="index.html"><img src="images/Sod_white_sm.png" width="50%" style="padding:3px;"></a></h1><div style="float:right;padding:4px 150px 0 0 ;"><a href="signup.html" class="button main">Sign Up</a></div>
+					<header id="header" class="alt">
+						<h1><a href="index.html"><img src="images/Sod_white_sm.png" width="40%" style="margin:0px 0 4px 0 ; vertical-align:auto;  "></a></h1><div style="float:right;padding:.2em 7em 0 0 ;"></div>
 						<nav id="nav">
 							<ul>
 								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<a href="#menu" class="menuToggle">Menu</a>
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Home</a></li>
@@ -36,38 +65,82 @@ git clone https://iamchaoticcoder@bitbucket.org/iamchaoticcoder/storageondemand.
 											<li><a href="index.html#faq">FAQ</a></li>
 											<li><a href="blog.html">Blog</a></li>
 											<li><a href="contact.html">Contact Us</a></li>
-
 										</ul>
 									</div>
 								</li>
 							</ul>
 						</nav>
+					
+					
+					
 					</header>
 
 				<!-- Main -->
-					<article id="main">
-						<header>
-							<h2>What's the Pilot?</h2>
-				
-						</header>
-						<section class="wrapper style5">
-							<div class="inner">
-                                <h3>You mean I'm special?</h3>
-                                <p>
-                                    The pilot is a market evaluation to determine how well the service will work in your area. Storage On Demand&trade; is backed by UPS, and is integrated into the UPS network. 
-                                    During this time, you will be able to have your items picked up by UPS, and stored at our facility for the remainder of the pilot period. Once the evaluation is complete, we will 
-                                    offer you 3 months of storage at no cost!
-                                </p>
-                                <p>
-                                    The pilot will also be evaluating particular boxes for weight, durability and ease of use. For this reason, we will only be trying out a medium size box listed in the FAQ below.
+					<article id="main" class="style5">
 
-                                </p>
+						<section class="  full-img">
+							<div class="row " style="width: 100%; padding:30px; margin: auto; border-radius: 6px;  background:rgba(0,0,0,0.3);">
+							
+							<div class="inner col-8 ">
+                                <h3>Ready for Home Storage <br/>
+								that Fits Your Life?<br>
+								Join our Kansas City Pilot Today</h3>
+                                <ul>
+									<li>Self storage with the reliability of UPS</li>
+									<li>No more trips to the storage faility - we pickup and return your belongings </li>
+									<li>Packing materials delivered to your home</li>
+									<li>Introduction storage pricing of $5 per box per month </li>									
+									<li>Choose length of storage </li>
+								</ul>
+							</div>
 
-                            </div>
-               
+                            <div class="col-4 " >
+								<div style="width: 100%; padding:30px; margin: auto; border-radius: 6px;  background:rgba(255,255,255,0.6);">
+									 <h3>Sign Up Today</h3>
+									<form method="post" action="https://formspree.io/storageondemand@ups.com" >
+										<div class="row gtr-uniform">
+											<div class="col-12 col-12-xsmall">
+												<input type="text" name="firstname" id="firstname" value="" placeholder="First Name" required/>
+											</div>
+											<div class="col-12 col-12-xsmall">
+													<input type="text" name="lastname" id="lastname" value="" placeholder="Last Name" required/>
+												</div>
+											<div class="col-12 col-12-xsmall">
+												<input type="email" name="email" id="email" value="" placeholder="Email" required/>
+											</div>
+
+
+											<!-- postal-code input-->
+											<div class="control-group">
+											
+												<div class="controls ">
+													<input id="postal-code" name="postal-code" type="text" placeholder="Zip / Postal Code" required
+													class="input-xlarge">
+													
+												</div>
+											</div>
+											
+											<div class="col-12 col-12-xsmall">
+													<input type="checkbox" name="chkTOS" id="chkTOS" style=";" onchange="document.getElementById('signup').disabled = !this.checked;" ><label for="chkTOS" >I confirm that I've been given enough time to read and understand our Terms of Service. <br/>Make a lawyer smile today.<br/>
+													<a href="tos.html" target="_blank">Read the Storage On Demand Terms of Service</a>. (This will open in a new window.)</label>
+													
+											</div>
+											
+
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" value="Sign Up" id="signup" class="primary" disabled /></li>
+
+												</ul>
+											</div>
+											<input type="hidden" name="_next" value="http://www.clickstorestuff.com/thanks.html"/>
+										</div>
+									</form>
+								</div>
+							</div>
 				
 					<!-- Storage on Demand FAQ Accordion -->
-				
+						</div>
 				
 						<div class="container-fluid bg-gray col-11" id="accordion-style-1">
 			
