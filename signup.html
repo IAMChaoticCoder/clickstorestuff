@@ -1,11 +1,5 @@
 <!DOCTYPE HTML>
-<!--
 
-Zips for KC
-66210,66213,66212,66251,66215,66214,66211,66207,66209,66221,66223,66219,66204,66206,66224,
-66062,66203,66222,66216,66220,66063,66051,66285,66282,66283,66208,66225,66276,66202,66250,
-66201,66217,66205,66218,66085,66286,66227
--->
 <html>
 	<head>
 		<title>Storage On Demand - a UPS company</title>
@@ -17,8 +11,9 @@ Zips for KC
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/timeline.css" />
+		
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
 		
 		<style>
 			#faq {
@@ -53,8 +48,37 @@ Zips for KC
 
 				}
 			}
+			li{
+				list-style-type: none;
+				}
+			#key ul li:before {    
+				font-family: 'FontAwesome';
+				content: '\f058';
+				margin:0 5px 0 -15px;
+				color: rgb(141, 216, 119);
+			}
 
 		</style>
+		
+			<!-- Facebook Pixel Code -->
+			<script>
+				!function(f,b,e,v,n,t,s)
+				{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+				n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+				if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+				n.queue=[];t=b.createElement(e);t.async=!0;
+				t.src=v;s=b.getElementsByTagName(e)[0];
+				s.parentNode.insertBefore(t,s)}(window, document,'script',
+				'https://connect.facebook.net/en_US/fbevents.js');
+				fbq('init', '474197522759713');
+				fbq('track', 'PageView');
+				</script>
+				<noscript>
+				<img height="1" width="1" style="display:none" 
+						src="https://www.facebook.com/tr?id=your-pixel-id-goes-here&ev=PageView&noscript=1"/>
+				</noscript>
+			<!-- End Facebook Pixel Code -->
+	
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131788733-1"></script>
@@ -106,33 +130,39 @@ Zips for KC
 
 															
 							<div class="inner col-8 "  style="min-width:300px !important; height:100% padding:30px; margin: 0 auto 0 auto; border-radius: 6px; ">
-								<h3  style="text-align: center;">Ready for Home Storage that Fits Your Life?<br>Join our Kansas City Pilot Today</h3>
+								<h2  style="text-align: center; text-transform: none; font-size: 120%">Ready for Home Storage that Fits Your Life?<br>Join our Kansas City Pilot Today!</h3>
 							</div>
 
-							<div class="inner col-8 hide-mobile"  style="min-width:300px !important; height:100% padding:30px; margin: 0 auto 0 auto; border-radius: 6px; font-size: 120%; line-height:1.5em;">
-								
-								<ul >
+							<div  id="key" class="inner col-8 hide-mobile"  style="min-width:300px !important; height:100% padding:30px; margin: 0 auto 0 auto; border-radius: 6px; font-size: 120%; line-height:1.5em;">
+								<div  style="padding-bottom: 30px;">At Storage on Demand, we’re on a mission to make storage easy!	<br/>Make a resolution to organize your space this year? We can help.
+									</div>
+									<p>Join our Kansas City pilot to test drive our service</p>
+								<ul>
 									<li>Self storage with the reliability of UPS</li>
-									<li>No more trips to the storage facility<br/> (We pickup and return your belongings) </li>
-									<li>Packing materials delivered to your home</li>
-									<li>Pilot storage pricing of $5 per box per month </li>									
-									<li>Choose length of storage </li>
+									<li>Pickup and return of your belongings <br/>(no more hauling stuff to storage) </li>
+									<li>Secure, staffed, climate controlled facility</li>
+									<li>Easy-to-use packing kits delivered to your home </li>									
+									<li>Affordable storage pricing of $5 per box per month </li>
+									<li>1-3 months of storage for pilot </li>
+									<li>A month of free future storage for each month purchased in pilot </li>
+									
 								</ul>
 							</div>
 
                             <div class="col-4 " style="float:none;" >
 								<div style="min-width:300px !important; padding:40px ; margin: 10px; border-radius: 6px;  background:rgba(0, 0, 0, 0.4);">
 									 <h3 style="text-align: center;" >Sign Up Today</h3>
+									 
 									<form method="post" action="https://formspree.io/storageondemand@ups.com" >
 										<div class="row gtr-uniform">
 											<div class="col-12 col-12-xsmall">
-												<input type="text" name="firstname" id="firstname" value="" placeholder="First Name" required autofocus/>
+												<input type="text" name="FNAME" id="firstname" value="" placeholder="First Name" required autofocus/>
 											</div>
 											<div class="col-12 col-12-xsmall">
-													<input type="text" name="lastname" id="lastname" value="" placeholder="Last Name" required/>
+													<input type="text" name="LNAME" id="lastname" value="" placeholder="Last Name" required/>
 												</div>
 											<div class="col-12 col-12-xsmall">
-												<input type="email" name="email" id="email" value="" placeholder="Email" required/>
+												<input type="email" name="EMAIL" id="email" value="" placeholder="Email" required/>
 											</div>
 											<div class="col-12 col-12-xsmall">
 													<input type="text" name="refcode" id="refcode" value="" placeholder="Referral Code" />
@@ -148,15 +178,15 @@ Zips for KC
 											</div>
 											
 											<div class="col-12 col-12-xsmall">
-													<input type="checkbox" name="chkTOS" id="chkTOS" style=";" onchange="document.getElementById('signup').disabled = !this.checked;" ><label for="chkTOS" >I confirm that I've been given enough time to read and understand our Terms of Service. <br/>Make a lawyer smile today.<br/>
+													<input type="checkbox" name="chkTOS" id="chkTOS" onchange="document.getElementById('signup').disabled = !this.checked;" ><label for="chkTOS" >I confirm that I've been given enough time to read and understand our Terms of Service. <br/>Make a lawyer smile today.<br/>
 													<a href="tos.html" target="_blank" style="text-decoration: none !important;">Read the Storage On Demand Terms of Service</a>. (This will open in a new window.)</label>
 													
 											</div>
 											
 
 											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" value="Sign Up" id="signup" class="primary" disabled /></li>
+												<ul class="actions"style="list-style-type: none;">
+													<li><input  type="submit" value="Sign Up" id="signup" class="primary" disabled /></li>
 
 												</ul>
 											</div>
@@ -166,9 +196,9 @@ Zips for KC
 								</div>
 							</div>
 							
-							<div class="inner col-8 show-mobile"  style="min-width:300px !important; height:100% padding:30px; margin: 25px auto 0 auto; border-radius: 6px; font-size: 130%; line-height:1.5em;">
+							<div id="key"   class="inner col-8 show-mobile"  style="min-width:300px !important; height:100% padding:30px; margin: 25px auto 0 auto; border-radius: 6px; font-size: 130%; line-height:1.5em;">
 								
-									<ul >
+									<ul>
 										<li>Self storage with the reliability of UPS</li>
 										<li>No more trips to the storage facility<br/> (We pickup and return your belongings) </li>
 										<li>Packing materials delivered to your home</li>
