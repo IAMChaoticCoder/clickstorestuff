@@ -1995,7 +1995,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #2e3842;
+			background: #414e5c;
 			color: #fff;
 			content: '\f00c';
 		}
