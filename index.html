@@ -13,7 +13,33 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/timeline.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		
+		<script>
+		$(document).ready(function() {
+
+			$(".toggle-accordion").on("click", function() {
+			  var accordionId = $(this).attr("accordion-id"),
+				numPanelOpen = $(accordionId + ' .collapse.in').length;
+			  
+			  $(this).toggleClass("active");
+		  
+			  if (numPanelOpen == 0) {
+				openAllPanels(accordionId);
+			  } else {
+				closeAllPanels(accordionId);
+			  }
+			})
+		  
+			openAllPanels = function(aId) {
+			  console.log("setAllPanelOpen");
+			  $(aId + ' .panel-collapse:not(".in")').collapse('show');
+			}
+			closeAllPanels = function(aId) {
+			  console.log("setAllPanelclose");
+			  $(aId + ' .panel-collapse.in').collapse('hide');
+			}
+			   
+		  });
+		  </script>
 		<style>
 		#faq {
 			padding: 2em 0 4em 0 ;
@@ -184,7 +210,10 @@
 							
 								<div class="row">
 									<div class="col-12">
-										<h2 class="text-green mb-4 text-center">Frequently Asked Questions</h2>
+										<h2 class="text-green mb-4 text-center">Frequently Asked Questions</h2><span style="text-align: right;">
+											<a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a>
+  </div>
+										</span>
 									</div>
 									<div class="col-12 mx-auto">
 										<div class="accordion col-12" id="accordionFAQ">
