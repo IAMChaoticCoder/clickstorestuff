@@ -4,7 +4,6 @@
 	<head>
 		<title>Storage On Demand - a UPS company</title>
 		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=11" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -12,97 +11,63 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
-		
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-<meta http-equiv="X-UA-Compatible" content="IE=11" />
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		
 		<style>
-
-		@media screen and (max-width: 1680px) {
 			#bigpad {
-					margin-top:160px;
-				}
-				#hidetop {
-					display:none;
-				}
-			body, input, select, textarea {
-				font-size: 11pt;
-				font-family: 'Source Sans Pro', sans-serif;
+				margin-top:160px;
 			}
-			.hide-mobile {
-					display:block;
-
-				}
-				.show-mobile {
-					display:none;
-
-				}
-			}
-
-			@media screen and (max-width: 1280px) {
-				#bigpad {
-					margin-top:160px;
-				}
-				#hidetop {
-					display:none;
-				}
-			body, input, select, textarea {
-				font-size: 10pt;
-				font-family: 'Source Sans Pro', sans-serif;
-			}
-			.hide-mobile {
-					display:block;
-
-				}
-				.show-mobile {
-					display:none;
-
-				}
-			}
-
-			@media screen and (max-width: 736px) {
-				#bigpad {
-					margin-top:160px;
-				}
-				.hide-mobile {
-					display:block;
-
-				}
-				.show-mobile {
-					display:none;
-
-				}
-			body, input, select, textarea {
-				font-size: 9pt;
-				letter-spacing: 0.0375em;
-				font-family: 'Source Sans Pro', sans-serif;
-			}
-
-			}
-
-
 			#faq {
 				padding: 2em 0 4em 0 ;
 			}
 			
+			.show-mobile {
+					display:none;
 
+				}
 			.full-img{
 				background-image: url("/images/pilot_landing_boxing.jpg");
 				background-position: top left;
 				background-repeat: no-repeat;
 				background-size:cover;
 			}
+			.greenheading {
+				color: #65fa38;
+				font-weight: 700;
+				font-size: 1.5em;
+
+			}
+
+			
+			body, input, select, textarea {
+				font-family: 'Source Sans Pro', sans-serif;
+				}
+
+			@media screen and (max-width: 736px) {
+
+			body, input, select, textarea {
+				font-size: 9pt;
+				letter-spacing: 0.0375em;
+				font-family: 'Source Sans Pro', sans-serif;
+				}
+				.greenheading {
+					text-align: center;
+
+				}
+
+			}
+
 
 			@media screen and (max-width: 480px) {
 				.full-img{
 				background-image: url("/images/pilot_landing_boxing.jpg");
 				background-position: top center;
 				background-repeat: no-repeat;
-				background-size:cover;
+				background-size: cover;
 				}
-				#bigpad {
-					margin-top:10px;
-				}
+
 				.hide-mobile {
 					display:none;
 
@@ -111,11 +76,33 @@
 					display:block;
 
 				}
+				.greenheading {
+					text-align: center;
+
+				}
 			}
+
+			li{
+				list-style-type: none;
+				}
+			#key ul li:before {    
+				font-family: 'FontAwesome';
+				content: '\f058';
+				margin:0 5px 0 -15px;
+				color: rgb(141, 216, 119);
+			}
+
+			#whiteheading {
+				color: ##fff;
+				font-weight: 600;
+				font-size: 1.1em;
+			}
+
 			li{
 				list-style-type: none;
 				font-size: 1em;
 				font-weight: 600;
+
 			}
 
 			#key ul li:before {    
@@ -140,18 +127,6 @@
 				color: white;
 				text-align: center;
 		
-			}
-			.greenheading {
-				color: #65fa38;
-				font-weight: 700;
-				font-size: 1.25em;
-
-			}
-
-			#whiteheading {
-				color: ##fff;
-				font-weight: 600;
-				font-size: 1.1em;
 			}
 
 		</style>
@@ -222,76 +197,77 @@
 					<article id="main" class="style5">
 
 						<section class="full-img">
-							<div class="row " style="min-width:300px !important; padding:10px 30px 10px 30px; margin: auto; border-radius: 6px;background:rgba(0, 0, 0, 0.4); ">
+							<!-- combined div row-->
+							<div class="row " style="min-width:300px !important; padding:20px; margin: auto; border-radius: 6px;background:rgba(0, 0, 0, 0.4); ">
+								
+
+
+								<div  id="key" class="inner col-8 "  style="min-width:300px !important; padding:130px 0 0 30px; margin: 0 auto 0 0; ">
+										<div  class="greenheading ">Ready for Home Storage that Fits Your Life? </div>	
+													
+										<div id="blub" style="padding: 40px 0 25px 10px; font-size:1.4em;" >
+											
+											At Storage on Demand, we’re on a mission to make storage easy!	<br/>
+											Join our Kansas City pilot to test drive our service</div>
 										
-							<!-- div -->
-							<div  class="greenheading show-mobile" style="padding: auto; margin:10px 0 10px 0;" >Ready for Home Storage that Fits Your Life? </div>
-								<!-- Signup form div-->				
-								<div class="col-4 " style="float:none; display:block;" >
-									
-									<div style="min-width:300px !important; display:block; padding:30px ; margin: 5px; border-radius: 6px;  background:rgba(0, 0, 0, 0.75);">
-										 <h3 style="text-align: center;" >Sign Up Today</h3>
-										 <p style="text-align: center;">Get Your Packing Kits Soon!</p>
-										<form method="post" action="https://formspree.io/storageondemand@ups.com" >
-											<div class="row gtr-uniform">
-												<div class="col-12 col-12-xsmall">
-													<input type="text" name="FNAME" id="firstname" value="" placeholder="First Name" required autofocus/>
-												</div>
-												<div class="col-12 col-12-xsmall">
-														<input type="text" name="LNAME" id="lastname" value="" placeholder="Last Name" required/>
-													</div>
-												<div class="col-12 col-12-xsmall">
-													<input type="email" name="EMAIL" id="email" value="" placeholder="Email" required/>
-												</div>
-												<div class="d-flex flex-row" style="margin:auto;">
-													<input id="postal-code" name="postal-code" type="text" placeholder="Zip / Postal Code" required class="col-6 col-6-xsmall" style="margin:0 0 5px 0;">
-													<div style="padding-left:10px;" > </div>
-													<input id="refcode" name="refcode" type="text"  placeholder="Referral Code"  class="d-md-flex"/>
-												
-												</div>
-												
-												<div class="col-12 col-12-xsmall">
-														<input type="checkbox" name="chkTOS" id="chkTOS" value=""  required ><label for="chkTOS" >I accept the <a href="tos.html" target="_blank" >Terms of Service</a></label>
-												</div>
-												
-												<div class="col-12">
-													<ul class="actions"style="list-style-type: none;">
-														<li><input  type="submit" value="Sign Up" id="signup" class="primary"  /></li>
-	
-													</ul>
-												</div>
-												<input type="hidden" name="_next" value="http://www.clickstorestuff.com/thanks.html"/>
-											</div>
-										</form>
+										<ul style="  text-shadow: 0 0 0px #000, 0 0 5px #000;">
+											<li>Affordable storage pricing of <span id="price">$5</span> a box / month </li>
+											<li>All supplies delivered with boxes (18"x18"x16") to your door! </li>								
+											<li>Door-to-Door Pickup and Return of your belongings<br/>
+											<span style="padding-left: 15px;">(No More Truck Rentals!)</span></li>
+											<li>Secure, staffed, climate controlled UPS facility</li>
+										</ul>
+										<p>
+											<div id="whiteheading">A month of <em>free</em> future storage</div>
+											<div style="font-weight: 200;">for each month purchased in pilot. Join our Kansas City Pilot Today!</div> </p>
 									</div>
-								</div>
-								<!-- End signup form -->
 
-							
-								<!-- Right div description-->
-								<div  id="key" class="inner col-8 "  style="min-width:300px; margin: 0 auto 0 auto; border-radius: 6px; font-size: 120%; line-height:1.5em;">
-									<div id="bigpad"><!-- Space above on web res --></div>
-									<div  style="padding-bottom: 5px;">
-										<div  class="greenheading hide-mobile">Ready for Home Storage that Fits Your Life? </div>
-										At Storage on Demand, we’re on a mission to make storage easy!	<br/>
-										Join our Kansas City pilot to test drive our service</div>
-									
-									<ul>
-										<li>Affordable storage pricing of <span id="price">$5</span> a box / month </li>
-										<li>All supplies delivered with boxes (18"x18"x16") to your door! </li>								
-										<li>Door-to-Door Pickup and Return of your belongings<br/>
-										<span style="padding-left: 15px;">(No More Truck Rentals!)</span></li>
-										<li>Secure, staffed, climate controlled UPS facility</li>
-									</ul>
-									<p>
-										<div id="whiteheading">A month of <em>free</em> future storage</div>
-										<div style="font-weight: 200;">for each month purchased in pilot. Join our Kansas City Pilot Today!</div> </p>
-								</div>
+								<!-- Signup form div-->				
+									<div class="col-4 " style="float:none; display:block;" >
+										
+										<div style="min-width:300px !important; display:block; padding:30px ; margin: 5px; border-radius: 6px;  background:rgba(0, 0, 0, 0.75);">
+											<h3 style="text-align: center;" >Sign Up Today</h3>
+											<p style="text-align: center;">Get Your Packing Kits Soon!</p>
+											<form method="post" action="https://formspree.io/storageondemand@ups.com" >
+												<div class="row gtr-uniform">
+													<div class="col-12 col-12-xsmall">
+														<input type="text" name="FNAME" id="firstname" value="" placeholder="First Name" required />
+													</div>
+													<div class="col-12 col-12-xsmall">
+															<input type="text" name="LNAME" id="lastname" value="" placeholder="Last Name" required/>
+														</div>
+													<div class="col-12 col-12-xsmall">
+														<input type="email" name="EMAIL" id="email" value="" placeholder="Email" required/>
+													</div>
+													<div class="d-flex flex-row" style="margin:auto;">
+														<input id="postal-code" name="postal-code" type="text" placeholder="Zip / Postal Code" required class="col-6 col-6-xsmall" style="margin:0 0 5px 0;">
+														<div style="padding-left:10px;" > </div>
+														<input id="refcode" name="refcode" type="text"  placeholder="Referral Code"  class="d-md-flex"/>
+													
+													</div>
+													
+													<div class="col-12 col-12-xsmall">
+															<input type="checkbox" name="chkTOS" id="chkTOS" value=""  required ><label for="chkTOS" >I accept the <a href="tos.html" target="_blank" >Terms of Service</a></label>
+													</div>
+													
+													<div class="col-12">
+														<ul class="actions"style="list-style-type: none;">
+															<li><input  type="submit" value="Sign Up" id="signup" class="primary"  /></li>
+		
+														</ul>
+													</div>
+													<input type="hidden" name="_next" value="http://www.clickstorestuff.com/thanks.html"/>
+												</div>
+											</form>
+										</div>
+									</div>
+									<!-- End signup form -->
 
-						</div>
+
+							</div>
 						</section>	
 						
-			
+				
 					<!-- Storage on Demand FAQ Accordion -->
 					<section class="wrapper style5" id="faq">
 				
@@ -323,8 +299,7 @@
 																</div>
 																<div id="collapseTwo" class="collapse fade" aria-labelledby="headingTwo" data-parent="#accordionFAQ">
 																	<div class="card-body">
-																			Absolutely! Your boxes will be directly delivered from your home to our secure facility and checked in, within a few short hours. The storage locations is a secure, climate controlled UPS facility.
-				</a>
+																			Absolutely! Your boxes will be directly delivered from your home to our secure facility and checked in, within a few short hours. The storage locations is a secure, climate controlled UPS facility.</a>
 																	</div>
 																</div>
 															</div>
@@ -500,9 +475,15 @@
 							<!-- .// Accordion -->
 		
 						
+				
+							<div style="text-align: center; margin-top: 20px; text-decoration: none;"><a href="index.html"  class="style4" style="text-align: center;">More FAQs - More Info</a></div>
+
+				
+
+						
 
 				<!-- CTA -->
-					<section id="cta" class="wrapper style4">
+				<section id="cta" class="wrapper style4">
 						<div class="inner">
 							<header>
 								<h2>Sign up now for the pilot!</h2>
