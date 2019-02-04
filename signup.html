@@ -16,6 +16,11 @@
 
 		
 		<style>
+			/* for larger res keep in one line */
+			.rwd-line { 
+				display: inline; 
+			}
+			
 			#bigpad {
 				margin-top:160px;
 			}
@@ -36,7 +41,8 @@
 			.greenheading {
 				color: #65fa38;
 				font-weight: 700;
-				font-size: 1.5em;
+				font-size: 2em;
+				line-height: 1.2em;
 
 			}
 
@@ -45,27 +51,52 @@
 				font-family: 'Source Sans Pro', sans-serif;
 				}
 
-			@media screen and (max-width: 736px) {
+			@media screen and (max-width: 1280px) {
 
-			body, input, select, textarea {
-				font-size: 9pt;
-				letter-spacing: 0.0375em;
-				font-family: 'Source Sans Pro', sans-serif;
+				/* for smaller res break the line */
+				.rwd-line { 
+					display: block; 
+				}
+
+			}
+
+			@media screen and (max-width: 736px) {
+				.full-img{
+					background-image: url("/images/pilot_landing_boxing.jpg");
+					background-position: top center;
+					background-repeat: no-repeat;
+					background-size: cover;
+				}
+				body, input, select, textarea {
+					font-size: .85em;
+					letter-spacing: 0.0375em;
+					font-family: 'Source Sans Pro', sans-serif;
 				}
 				.greenheading {
 					text-align: center;
 
+				}
+				/* for smaller res break the line */
+				.rwd-line { 
+					display: block; 
 				}
 
 			}
 
 
 			@media screen and (max-width: 480px) {
+
+				body, input, select, textarea {
+					font-size: .8em;
+					letter-spacing: 0.0375em;
+					font-family: 'Source Sans Pro', sans-serif;
+				}
+
 				.full-img{
-				background-image: url("/images/pilot_landing_boxing.jpg");
-				background-position: top center;
-				background-repeat: no-repeat;
-				background-size: cover;
+					background-image: url("/images/pilot_landing_boxing.jpg");
+					background-position: top center;
+					background-repeat: no-repeat;
+					background-size: cover;
 				}
 
 				.hide-mobile {
@@ -80,6 +111,10 @@
 					text-align: center;
 
 				}
+				/* for smaller res break the line */
+				.rwd-line { 
+					display: block; 
+				}
 			}
 
 			li{
@@ -91,7 +126,7 @@
 				margin:0 5px 0 -15px;
 				color: rgb(141, 216, 119);
 			}
-
+			
 			#whiteheading {
 				color: ##fff;
 				font-weight: 600;
@@ -128,6 +163,8 @@
 				text-align: center;
 		
 			}
+	
+		
 
 		</style>
 		
@@ -203,7 +240,7 @@
 
 
 								<div  id="key" class="inner col-8 "  style="min-width:300px !important; padding:130px 0 0 30px; margin: 0 auto 0 0; ">
-										<div  class="greenheading ">Ready for Home Storage that Fits Your Life? </div>	
+										<div  class="greenheading "><span class="rwd-line">Ready for Home Storage </span><span class="rwd-line">that Fits Your Life?</span> </div>	
 													
 										<div id="blub" style="padding: 40px 0 25px 10px; font-size:1.4em;" >
 											
@@ -219,7 +256,7 @@
 										</ul>
 										<p>
 											<div id="whiteheading">A month of <em>free</em> future storage</div>
-											<div style="font-weight: 200;">for each month purchased in pilot. Join our Kansas City Pilot Today!</div> </p>
+											<span style="font-weight: 200;">for each month purchased in pilot. Join our Kansas City Pilot Today!</span> </p>
 									</div>
 
 								<!-- Signup form div-->				
@@ -247,7 +284,7 @@
 													</div>
 													
 													<div class="col-12 col-12-xsmall">
-															<input type="checkbox" name="chkTOS" id="chkTOS" value=""  required ><label for="chkTOS" >I accept the <a href="tos.html" target="_blank" >Terms of Service</a></label>
+															<input type="checkbox" name="chkTOS" id="chkTOS" value="" class="custom-control-input"   required ><label for="chkTOS" >I accept the <a href="tos.html" target="_blank" >Terms of Service</a></label>
 													</div>
 													
 													<div class="col-12">
