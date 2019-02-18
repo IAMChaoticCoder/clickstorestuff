@@ -211,9 +211,12 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		color: #fff;
 		font-weight: 800;
-		letter-spacing: 0.225em;
+		letter-spacing: 0.125em;
 		line-height: 1em;
 		margin: 0 0 1em 0;
+
+	}
+	h1,h2,h3 {
 		text-transform: uppercase;
 	}
 
@@ -2595,11 +2598,12 @@ input, select, textarea {
 			display: block;
 			position: relative;
 			text-align: left;
-			
+			border-radius: 8px;
 		}
 
 			.features li:nth-child(1) {
 				background-color: rgba(0, 0, 0, 0.035);
+
 			}
 
 			.features li:nth-child(2) {
@@ -2640,13 +2644,14 @@ input, select, textarea {
 
 			.features li:before {
 				display: block;
-				color: #2394cc;
+				color: #46a1ce;
 				position: absolute;
 				left: 1.75em;
 				top: 2.75em;
 				font-size: 1.5em;
-			}
 
+			}
+/*
 			.features li:nth-child(1) {
 				border-top-left-radius: 3px;
 			}
@@ -2662,7 +2667,7 @@ input, select, textarea {
 			.features li:nth-last-child(2) {
 				border-bottom-left-radius: 3px;
 			}
-
+*/
 			@media screen and (max-width: 980px) {
 
 				.features li {
@@ -2854,7 +2859,7 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-color: #2394cc;
-			color: #c8ece9;
+			color: #dfeceb;
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
@@ -2878,7 +2883,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 header p {
-				color: #a6e0db;
+				color: #dfeceb;
 			}
 
 			.wrapper.style1 header.major h2, .wrapper.style1 header.major h3, .wrapper.style1 header.major h4, .wrapper.style1 header.major h5, .wrapper.style1 header.major h6 {
@@ -2886,7 +2891,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 header.major p {
-				color: #c8ece9;
+				color: #dfeceb;
 			}
 
 			.wrapper.style1 label {
@@ -2912,7 +2917,7 @@ input, select, textarea {
 
 			.wrapper.style1 input[type="checkbox"] + label,
 			.wrapper.style1 input[type="radio"] + label {
-				color: #c8ece9;
+				color: #dfeceb;
 			}
 
 				.wrapper.style1 input[type="checkbox"] + label:before,
@@ -2927,23 +2932,23 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
-				color: #a6e0db !important;
+				color: #dfeceb !important;
 			}
 
 			.wrapper.style1 :-moz-placeholder {
-				color: #a6e0db !important;
+				color: #dfeceb !important;
 			}
 
 			.wrapper.style1 ::-moz-placeholder {
-				color: #a6e0db !important;
+				color: #dfeceb !important;
 			}
 
 			.wrapper.style1 :-ms-input-placeholder {
-				color: #a6e0db !important;
+				color: #dfeceb !important;
 			}
 
 			.wrapper.style1 .formerize-placeholder {
-				color: #a6e0db !important;
+				color: #dfeceb !important;
 			}
 
 			.wrapper.style1 .icon.major {
@@ -4057,8 +4062,10 @@ input, select, textarea {
 		background-color: transparent;
 		text-decoration: none !important;
 		font-size: .9rem;
-		font-weight: bold;
+		font-weight: 600;
 		padding-left: 25px;
+		text-transform: none;
+		letter-spacing: 0em;
 	}
 	/* inside portion of the card - the answer section */
 	#accordion-style-1 .card-body {
@@ -4084,6 +4091,7 @@ input, select, textarea {
 		border-top-right-radius: 7px;
 		border-bottom-right-radius: 7px;
 		display:block;
+
 	}
 
 	.carousel-inner img {
