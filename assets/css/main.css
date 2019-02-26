@@ -2598,7 +2598,7 @@ input, select, textarea {
 			display: block;
 			position: relative;
 			text-align: left;
-			border-radius: 8px;
+			border-radius: 6px;
 		}
 
 			.features li:nth-child(1) {
@@ -2858,7 +2858,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #2394cc;
+			background-color: #4b9fc9; /*#2394cc;*/
 			color: #dfeceb;
 		}
 
@@ -3017,7 +3017,7 @@ input, select, textarea {
 			}
 
 		.wrapper.style2 {
-			background-color: #2e3842;
+			background-color: #859cb3; /*586b7e*/
 		}
 
 		.wrapper.style3 {
@@ -3184,7 +3184,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style5 {
-			background-color: #fffcf8;
+			background-color: #fdfcfb;
 			color: #4E4852;
 		}
 
@@ -3863,7 +3863,7 @@ input, select, textarea {
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/landingpagegraphic.png");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/landingpagegraphic.png");
 		background-attachment: fixed;
-		background-position: center center;
+		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: cover;
 		text-align: center;
